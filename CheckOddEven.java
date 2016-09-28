@@ -1,21 +1,26 @@
+package com.study.java;
 
 public class CheckOddEven {
 
+	 //Write a program called CheckOddEven which prints "Odd Number" if the int variable
+	//“number" is odd, or “Even Number” otherwise.
+	
+	
+	public void evenOddCheck(int number){
+	if ((number%2)==0){
+		System.out.println("Number is Even" + "---" + number);
+	}
+	else {
+		System.out.println("Number is Odd" + "---"  + number);
+	}
+	
+	}
 	public static void main(String[] args) {
 
-  //Write a program called CheckOddEven which prints "Odd Number" if the int variable
-//“number" is odd, or “Even Number” otherwise.
-		//The program shall always print “BYE!” before exiting.
-		
-		int number = 567543;
-		if ((number%2)==0){
-			System.out.println("Even");
-		}
-		else {
-			System.out.println("Odd");
-		}
-		System.out.println("BYE");
-		}
+    CheckOddEven EO = new CheckOddEven();
+    EO.evenOddCheck(12);
+	}
+    	
 	}
 
 
